@@ -9,18 +9,18 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 
 @Entity
-public class Admin {// ¹ÜÀíÔ±ĞÅÏ¢»ù±í
+public class Admin {//ç®¡ç†å‘˜ä¿¡æ¯åŸºè¡¨
 
-	private int aid;// ¹ÜÀíÔ±id
-	private String password;// ÃÜÂë
-	private String name;// µÇÈëÓÃ»§Ãû
-	private String gender;// ĞÔ±ğ
-	private int rank;// È¨ÏŞ 0,1,2,3 0 ×î¸ß
-	private Date addDate;// ¸ÃÓÃ»§Ìí¼ÓÊ±¼ä
-	private int state;// ÔÚÏß 1 ÀëÏß 0
-	private Date lastLogin;// ×î½üÒ»´ÎµÇÂ¼Ê±¼ä
-	private String accountStatus;// ÕËºÅ×´Ì¬£¬ÊÇ·ñ±»Ëø¶¨
-	private String email;// µç×ÓÓÊÏäµØÖ·
+	private int aid;//ç®¡ç†å‘˜id
+	private String password;//å¯†ç 
+	private String name;//ç™»å…¥ç”¨æˆ·å
+	private String gender;//æ€§åˆ«
+	private int rank;//æƒé™ 0,1,2,3   0 æœ€é«˜
+	private Date addDate;//è¯¥ç”¨æˆ·æ·»åŠ æ—¶é—´
+	private int state;//åœ¨çº¿ 1 ç¦»çº¿ 0  
+	private Date lastLogin;//æœ€è¿‘ä¸€æ¬¡ç™»å½•æ—¶é—´
+	private String accountStatus;//è´¦å·çŠ¶æ€ï¼Œæ˜¯å¦è¢«é”å®š
+	private String email;//ç”µå­é‚®ç®±åœ°å€
 
 	/**
 	 * @return the lastLogin

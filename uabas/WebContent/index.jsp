@@ -1,106 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>后台管理首页</title>
-
-	<!-- The styles -->
-	<link id="bs-css" href="css/bootstrap-cerulean.css" rel="stylesheet">
-	<style type="text/css">
-	  body {
-		padding-bottom: 40px;
-	  }
-	  .sidebar-nav {
-		padding: 9px 0;
-	  }
-	</style>
-	<link href="css/bootstrap-responsive.css" rel="stylesheet">
-	<link href="css/charisma-app.css" rel="stylesheet">
-	<link href="css/jquery-ui-1.8.21.custom.css" rel="stylesheet">
-	<link href='css/fullcalendar.css' rel='stylesheet'>
-	<link href='css/fullcalendar.print.css' rel='stylesheet'  media='print'>
-	<link href='css/chosen.css' rel='stylesheet'>
-	<link href='css/uniform.default.css' rel='stylesheet'>
-	<link href='css/colorbox.css' rel='stylesheet'>
-	<link href='css/jquery.cleditor.css' rel='stylesheet'>
-	<link href='css/jquery.noty.css' rel='stylesheet'>
-	<link href='css/noty_theme_default.css' rel='stylesheet'>
-	<link href='css/elfinder.min.css' rel='stylesheet'>
-	<link href='css/elfinder.theme.css' rel='stylesheet'>
-	<link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
-	<link href='css/opa-icons.css' rel='stylesheet'>
-	<link href='css/uploadify.css' rel='stylesheet'>
-
-	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-</head>
-
-<body>
-		<!-- topbar starts -->
-	<div class="navbar">
-		<div class="navbar-inner">
-			<div class="container-fluid">
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</a>
-				<a class="brand" href="index.jsp"> <img alt="Charisma Logo" src="img/logo20.png" /> <span>后台管理</span></a>
-				
-				<!-- user dropdown starts -->
-				<div class="btn-group pull-right" >
-					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-						<i class="icon-user"></i><span class="hidden-phone"> admin</span>
-						<span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Profile</a></li>
-						<li class="divider"></li>
-						<li><a href="login.html">注销</a></li>
-					</ul>
-				</div>
-				<!-- user dropdown ends -->
-				
-			</div>
-		</div>
-	</div>
-	<!-- topbar ends -->
-		<div class="container-fluid">
-		<div class="row-fluid">
-				
-			<!-- left menu starts -->
-			<div class="span2 main-menu-span">
-				<div class="well nav-collapse sidebar-nav">
-					<ul class="nav nav-tabs nav-stacked main-menu">
-						<li class="nav-header hidden-tablet">导航</li>
-						<li><a class="ajax-link" href="index.jsp"><i class="icon-home"></i><span class="hidden-tablet"> 后台主页</span></a></li>
-						<li><a class="ajax-link" href="ui.html"><i class="icon-eye-open"></i><span class="hidden-tablet"> 用户管理</span></a></li>
-						<li><a class="ajax-link" href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> 网站管理</span></a></li>
-						<li><a class="ajax-link" href="chart.html"><i class="icon-list-alt"></i><span class="hidden-tablet"> 基本数据</span></a></li>
-						<li><a class="ajax-link" href="typography.html"><i class="icon-font"></i><span class="hidden-tablet"> 热图展示</span></a></li>
-						<li><a class="ajax-link" href="gallery.html"><i class="icon-picture"></i><span class="hidden-tablet"> 数据导出</span></a></li>
-						<li class="nav-header hidden-tablet">快捷链接</li>
-						<li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 访问统计</span></a></li>
-						<li><a class="ajax-link" href="calendar.html"><i class="icon-calendar"></i><span class="hidden-tablet"> 点击热图</span></a></li>
-						<li><a class="ajax-link" href="grid.html"><i class="icon-th"></i><span class="hidden-tablet"> 浏览器统计</span></a></li>
-						<li><a class="ajax-link" href="file-manager.html"><i class="icon-folder-open"></i><span class="hidden-tablet"> 操作系统统计</span></a></li>
-						<li><a href="tour.html"><i class="icon-globe"></i><span class="hidden-tablet"> 鼠标移动图</span></a></li>
-						<li><a class="ajax-link" href="icon.html"><i class="icon-star"></i><span class="hidden-tablet"> 添加用户</span></a></li>
-						<li><a href="login.html"><i class="icon-lock"></i><span class="hidden-tablet"> 退出登录</span></a></li>
-					</ul>
-				</div><!--/.well -->
-			</div><!--/span-->
-			<!-- left menu ends -->
-			
-			<noscript>
-				<div class="alert alert-block span10">
-					<h4 class="alert-heading">Warning!</h4>
-					<p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
-				</div>
-			</noscript>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<jsp:include page="header.jsp"></jsp:include>
 			
 			<div id="content" class="span10">
 			<!-- content starts -->
@@ -115,7 +15,7 @@
 						<a href="#">后台主页</a>
 					</li>
 				</ul>
-			</div>
+			</div><!-- 
 			<div class="sortable row-fluid">
 				<a data-rel="tooltip" title="6 new members." class="well span3 top-block" href="#">
 					<span class="icon32 icon-red icon-user"></span>
@@ -205,7 +105,7 @@
 						</div>
 					</div>
 				</div><!--/span-->
-						
+					<!--	
 				<div class="box span4">
 					<div class="box-header well" data-original-title>
 						<h2><i class="icon-user"></i> Member Activity</h2>
@@ -253,7 +153,7 @@
 						</div>
 					</div>
 				</div><!--/span-->
-						
+					<!--	
 				<div class="box span4">
 					<div class="box-header well" data-original-title>
 						<h2><i class="icon-list-alt"></i> Realtime Traffic</h2>
@@ -268,8 +168,8 @@
 							<p>Time between updates: <input id="updateInterval" type="text" value="" style="text-align: right; width:5em"> milliseconds</p>
 					</div>
 				</div><!--/span-->
-			</div><!--/row-->
-
+			<!--</div><!--/row-->
+<!--
 			<div class="row-fluid sortable">
 				<div class="box span4">
 					<div class="box-header well" data-original-title>
@@ -315,7 +215,7 @@
 						</p>
 					</div>
 				</div><!--/span-->
-					
+				<!--	
 				<div class="box span4">
 					<div class="box-header well" data-original-title>
 						<h2><i class="icon-list"></i> Buttons</h2>
@@ -355,7 +255,7 @@
 						
 					</div>
 				</div><!--/span-->
-					
+				<!--	
 				<div class="box span4">
 					<div class="box-header well" data-original-title>
 						<h2><i class="icon-list"></i> Weekly Stat</h2>
@@ -426,15 +326,15 @@
 						</ul>
 					</div>
 				</div><!--/span-->
-			</div><!--/row-->
+			<!--</div><!--/row-->
 				  
 
 		  
        
 					<!-- content ends -->
-			</div><!--/#content.span10-->
-				</div><!--/fluid-row-->
-				
+			<!--</div><!--/#content.span10-->
+			<!--	</div><!--/fluid-row-->
+		<!--		
 		<hr>
 
 		<div class="modal hide fade" id="myModal">
@@ -450,87 +350,7 @@
 				<a href="#" class="btn btn-primary">Save changes</a>
 			</div>
 		</div>
-
-		<footer>
-			<p class="pull-right">用户访问行为分析系统</p>
-		</footer>
+-->
 		
-	</div><!--/.fluid-container-->
-
-	<!-- external javascript
-	================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-
-	<!-- jQuery -->
-	<script src="js/jquery-1.7.2.min.js"></script>
-	<!-- jQuery UI -->
-	<script src="js/jquery-ui-1.8.21.custom.min.js"></script>
-	<!-- transition / effect library -->
-	<script src="js/bootstrap-transition.js"></script>
-	<!-- alert enhancer library -->
-	<script src="js/bootstrap-alert.js"></script>
-	<!-- modal / dialog library -->
-	<script src="js/bootstrap-modal.js"></script>
-	<!-- custom dropdown library -->
-	<script src="js/bootstrap-dropdown.js"></script>
-	<!-- scrolspy library -->
-	<script src="js/bootstrap-scrollspy.js"></script>
-	<!-- library for creating tabs -->
-	<script src="js/bootstrap-tab.js"></script>
-	<!-- library for advanced tooltip -->
-	<script src="js/bootstrap-tooltip.js"></script>
-	<!-- popover effect library -->
-	<script src="js/bootstrap-popover.js"></script>
-	<!-- button enhancer library -->
-	<script src="js/bootstrap-button.js"></script>
-	<!-- accordion library (optional, not used in demo) -->
-	<script src="js/bootstrap-collapse.js"></script>
-	<!-- carousel slideshow library (optional, not used in demo) -->
-	<script src="js/bootstrap-carousel.js"></script>
-	<!-- autocomplete library -->
-	<script src="js/bootstrap-typeahead.js"></script>
-	<!-- tour library -->
-	<script src="js/bootstrap-tour.js"></script>
-	<!-- library for cookie management -->
-	<script src="js/jquery.cookie.js"></script>
-	<!-- calander plugin -->
-	<script src='js/fullcalendar.min.js'></script>
-	<!-- data table plugin -->
-	<script src='js/jquery.dataTables.min.js'></script>
-
-	<!-- chart libraries start -->
-	<script src="js/excanvas.js"></script>
-	<script src="js/jquery.flot.min.js"></script>
-	<script src="js/jquery.flot.pie.min.js"></script>
-	<script src="js/jquery.flot.stack.js"></script>
-	<script src="js/jquery.flot.resize.min.js"></script>
-	<!-- chart libraries end -->
-
-	<!-- select or dropdown enhancer -->
-	<script src="js/jquery.chosen.min.js"></script>
-	<!-- checkbox, radio, and file input styler -->
-	<script src="js/jquery.uniform.min.js"></script>
-	<!-- plugin for gallery image view -->
-	<script src="js/jquery.colorbox.min.js"></script>
-	<!-- rich text editor library -->
-	<script src="js/jquery.cleditor.min.js"></script>
-	<!-- notification plugin -->
-	<script src="js/jquery.noty.js"></script>
-	<!-- file manager library -->
-	<script src="js/jquery.elfinder.min.js"></script>
-	<!-- star rating plugin -->
-	<script src="js/jquery.raty.min.js"></script>
-	<!-- for iOS style toggle switch -->
-	<script src="js/jquery.iphone.toggle.js"></script>
-	<!-- autogrowing textarea plugin -->
-	<script src="js/jquery.autogrow-textarea.js"></script>
-	<!-- multiple file upload plugin -->
-	<script src="js/jquery.uploadify-3.1.min.js"></script>
-	<!-- history.js for cross-browser state change on ajax -->
-	<script src="js/jquery.history.js"></script>
-	<!-- application script for Charisma demo -->
-	<script src="js/charisma.js"></script>
+<jsp:include page="footer.jsp"></jsp:include>
 	
-		
-</body>
-</html>

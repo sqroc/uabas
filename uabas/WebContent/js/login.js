@@ -6,7 +6,8 @@ $('#btn-login').click(function() {
 		if(data.success == true){
 			window.location.href='index.jsp';
 		}else{
-			alert("帐号或密码错误！");
+			$('#loginModal').modal('show');
+			//alert("帐号或密码错误！");
 		}
 	}, "json");
 });

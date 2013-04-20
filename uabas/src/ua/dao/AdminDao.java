@@ -21,5 +21,7 @@ public interface AdminDao {
     public int getTotalNum() ;
 	
     public List<Admin> getOnlineAdmins(Admin admin);
+    
+    public List<Admin> getAllAdmins();
 }
 

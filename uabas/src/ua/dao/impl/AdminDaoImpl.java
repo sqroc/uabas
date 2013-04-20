@@ -45,7 +45,7 @@ public class AdminDaoImpl implements AdminDao {
 
 		// Admin admin = new Admin();
 		// admin.setAid(id);
-		System.out.println("要更新的 aid 为");
+		System.out.println("要锟斤拷锟铰碉拷 aid 为");
 
 		hibernateTemplate.update(admin);
 
@@ -108,7 +108,13 @@ public class AdminDaoImpl implements AdminDao {
 		List<Admin> admins = hibernateTemplate.find(sql);
 
 		return admins;
-
+	}
+	
+	public List<Admin> getAllAdmins() {
+		System.out.println("getAllAdmins()");
+		String sql = "from Admin";
+		List<Admin> admins = hibernateTemplate.find(sql);
+		return admins;
 	}
 
 }

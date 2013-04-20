@@ -57,6 +57,10 @@ public class AdminManagerImpl implements AdminManager {
 	public List<Admin> getOnlineAdmins(Admin admin) throws Exception {
 		return admindao.getOnlineAdmins(admin);
 	}
+	
+	public List<Admin> getAllAdmins() throws Exception {
+		return admindao.getAllAdmins();
+	}
 
 }
 

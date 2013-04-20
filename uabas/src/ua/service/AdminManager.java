@@ -21,5 +21,7 @@ public interface AdminManager {
 	public int getTotalNum() throws Exception;
 	
 	public List<Admin> getOnlineAdmins(Admin admin) throws Exception;
+	
+	public List<Admin> getAllAdmins() throws Exception;
  
 }
