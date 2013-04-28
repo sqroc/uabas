@@ -43,10 +43,6 @@ public class AdminDaoImpl implements AdminDao {
 
 	public void modify(Admin admin) {
 
-		// Admin admin = new Admin();
-		// admin.setAid(id);
-		System.out.println("Ҫ���µ� aid Ϊ");
-
 		hibernateTemplate.update(admin);
 
 	}
@@ -76,7 +72,6 @@ public class AdminDaoImpl implements AdminDao {
 
 	public List<Admin> getAdmins(final int start, final int limit) {
 
-		System.out.println("getAdmins()");
 		List<Admin> admins = hibernateTemplate
 				.executeFind(new HibernateCallback() {
 					public Object doInHibernate(Session session)
@@ -102,7 +97,7 @@ public class AdminDaoImpl implements AdminDao {
 	}
 
 	public List<Admin> getOnlineAdmins(Admin admin) {
-		System.out.println("getOnlineAdmins()");
+		//System.out.println("getOnlineAdmins()");
 		String sql = "from Admin as ad where ad.state = 1 and ad.name <> '"
 				+ admin.getName() + "'";
 		List<Admin> admins = hibernateTemplate.find(sql);
@@ -111,7 +106,7 @@ public class AdminDaoImpl implements AdminDao {
 	}
 	
 	public List<Admin> getAllAdmins() {
-		System.out.println("getAllAdmins()");
+		//System.out.println("getAllAdmins()");
 		String sql = "from Admin";
 		List<Admin> admins = hibernateTemplate.find(sql);
 		return admins;

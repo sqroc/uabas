@@ -97,8 +97,8 @@
 						<li class="nav-header hidden-tablet">导航</li>
 						<li><a class="ajax-link" href="index.jsp"><i class="icon-home"></i><span class="hidden-tablet"> 后台主页</span></a></li>
 						<li><a class="ajax-link" href="user.jsp"><i class="icon-eye-open"></i><span class="hidden-tablet"> 用户管理</span></a></li>
-						<li><a class="ajax-link" href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> 网站管理</span></a></li>
-						<li><a class="ajax-link" href="chart.html"><i class="icon-list-alt"></i><span class="hidden-tablet"> 基本数据</span></a></li>
+						<li><a class="ajax-link" href="website.jsp"><i class="icon-edit"></i><span class="hidden-tablet"> 网站管理</span></a></li>
+						<li><a class="ajax-link" href="chart.jsp"><i class="icon-list-alt"></i><span class="hidden-tablet"> 基本数据</span></a></li>
 						<li><a class="ajax-link" href="typography.html"><i class="icon-font"></i><span class="hidden-tablet"> 热图展示</span></a></li>
 						<li><a class="ajax-link" href="gallery.html"><i class="icon-picture"></i><span class="hidden-tablet"> 数据导出</span></a></li>
 						<li class="nav-header hidden-tablet">快捷链接</li>
