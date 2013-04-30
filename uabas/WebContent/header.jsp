@@ -100,7 +100,7 @@
 						<li><a class="ajax-link" href="website.jsp"><i class="icon-edit"></i><span class="hidden-tablet"> 网站管理</span></a></li>
 						<li><a class="ajax-link" href="chart.jsp"><i class="icon-list-alt"></i><span class="hidden-tablet"> 基本数据</span></a></li>
 						<li><a class="ajax-link" href="typography.html"><i class="icon-font"></i><span class="hidden-tablet"> 热图展示</span></a></li>
-						<li><a class="ajax-link" href="gallery.html"><i class="icon-picture"></i><span class="hidden-tablet"> 数据导出</span></a></li>
+						<li><a class="ajax-link" href="export.jsp"><i class="icon-picture"></i><span class="hidden-tablet"> 数据导出</span></a></li>
 						<li class="nav-header hidden-tablet">快捷链接</li>
 						<li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 访问统计</span></a></li>
 						<li><a class="ajax-link" href="calendar.html"><i class="icon-calendar"></i><span class="hidden-tablet"> 点击热图</span></a></li>
