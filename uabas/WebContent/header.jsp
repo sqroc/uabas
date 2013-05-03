@@ -99,16 +99,16 @@
 						<li><a class="ajax-link" href="user.jsp"><i class="icon-eye-open"></i><span class="hidden-tablet"> 用户管理</span></a></li>
 						<li><a class="ajax-link" href="website.jsp"><i class="icon-edit"></i><span class="hidden-tablet"> 网站管理</span></a></li>
 						<li><a class="ajax-link" href="chart.jsp"><i class="icon-list-alt"></i><span class="hidden-tablet"> 基本数据</span></a></li>
-						<li><a class="ajax-link" href="typography.html"><i class="icon-font"></i><span class="hidden-tablet"> 热图展示</span></a></li>
+						<li><a class="ajax-link" href="record.jsp"><i class="icon-font"></i><span class="hidden-tablet"> 鼠标路径图</span></a></li>
 						<li><a class="ajax-link" href="export.jsp"><i class="icon-picture"></i><span class="hidden-tablet"> 数据导出</span></a></li>
 						<li class="nav-header hidden-tablet">快捷链接</li>
-						<li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 访问统计</span></a></li>
+						<!-- <li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 访问统计</span></a></li>
 						<li><a class="ajax-link" href="calendar.html"><i class="icon-calendar"></i><span class="hidden-tablet"> 点击热图</span></a></li>
 						<li><a class="ajax-link" href="grid.html"><i class="icon-th"></i><span class="hidden-tablet"> 浏览器统计</span></a></li>
 						<li><a class="ajax-link" href="file-manager.html"><i class="icon-folder-open"></i><span class="hidden-tablet"> 操作系统统计</span></a></li>
-						<li><a href="tour.html"><i class="icon-globe"></i><span class="hidden-tablet"> 鼠标移动图</span></a></li>
-						<li><a class="ajax-link" href="icon.html"><i class="icon-star"></i><span class="hidden-tablet"> 添加用户</span></a></li>
-						<li><a href="login.html"><i class="icon-lock"></i><span class="hidden-tablet"> 退出登录</span></a></li>
+						 <li><a href="draw.jsp"><i class="icon-globe"></i><span class="hidden-tablet"> 热图展示</span></a></li>
+						<li><a class="ajax-link" href="user.jsp"><i class="icon-star"></i><span class="hidden-tablet"> 添加用户</span></a></li>
+						--><li><a href="login.html"><i class="icon-lock"></i><span class="hidden-tablet"> 退出登录</span></a></li>
 					</ul>
 				</div><!--/.well -->
 			</div><!--/span-->
