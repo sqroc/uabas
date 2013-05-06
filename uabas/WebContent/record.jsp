@@ -31,10 +31,11 @@
 						  <thead>
 							  <tr>
 							      <th>记录ID</th>
-								  <th>浏览总时间</th>
-								  <th>点击数</th>
 								  <th>所属网站</th>
-								  <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;操&nbsp;&nbsp;&nbsp;&nbsp;作&nbsp;</th>
+								  <th>所用浏览器</th>
+								  <th>操作系统</th>
+								  <th>记录时间</th>
+								  <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;操&nbsp;&nbsp;&nbsp;&nbsp;作&nbsp;</th>
 							  </tr>
 						  </thead>   
 						  <tbody>
@@ -66,60 +67,19 @@
 			</div>
 		</div>
 		
-		<div class="modal hide fade" id="editwebsiteModel">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">×</button>
-				<h3>修改网站信息</h3>
-			</div>
-			<div class="modal-body">
-				<form class="form-horizontal">
-						  <fieldset>
-							<div class="control-group">
-							  <label class="control-label">网站名称</label>
-							  <div class="controls">
-								<input autofocus class="input-xlarge" name="name2" id="name2" type="text"/>
-							  </div>
-							</div>
-							<div class="control-group">
-							  <label class="control-label">网站URL</label>
-							  <div class="controls">
-								<input class="input-xlarge" name="url2" id="url2" type="text"/>
-							  </div>
-							</div>
-   
-							<div class="control-group">
-							  <label class="control-label">网站描述</label>
-							  <div class="controls">
-								<input autofocus class="input-xlarge" name="description2" id="description2" type="text"/>
-							  </div>
-							</div>
-							<input name="aid" id="aid" type="hidden" value=""/>
-							<div class="form-actions">
-							<input id="btn-editwebsite" type="button" class="btn btn-primary"  value="提交">
-							 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							  <button type="reset" class="btn">清空</button>
-							</div>
-						  </fieldset>
-						</form>
-			</div>
-			<div class="modal-footer">
-				<a href="#" class="btn" data-dismiss="modal">返回</a>
-				<!--  <a href="#" class="btn btn-primary">保存</a>-->
-			</div>
-		</div>
 		
-		<div class="modal hide fade" id="deletewebsiteModel">
+		<div class="modal hide fade" id="deleterecordModel">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal">×</button>
-				<h3>删除网站</h3>
+				<h3>删除记录</h3>
 			</div>
 			<div class="modal-body">
-				<strong>请确认删除该网站信息？</strong>
-				<input name="aiddelete" id="aiddelete" type="hidden" value=""/>
+				<strong>请确认删除该记录信息？</strong>
+				<input name="riddelete" id="riddelete" type="hidden" value=""/>
 			</div>
 			<div class="modal-footer">
 				<a href="#" class="btn" data-dismiss="modal">取消</a>
-				<a href="#" class="btn btn-primary" id="btn-deletewebsites">确认删除</a>
+				<a href="#" class="btn btn-primary" id="btn-deleterecord">确认删除</a>
 			</div>
 		</div>
 		

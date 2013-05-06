@@ -37,7 +37,7 @@ public class RecordsDaoImpl implements RecordsDao {
 	@Override
 	public int deleletByid(int id) {
 		Records temp = new Records();
-		temp.setId(id);
+		temp.setRid(id);
 		hibernateTemplate.delete(temp);
 		return 1;
 	}

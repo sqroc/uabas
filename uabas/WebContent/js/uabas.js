@@ -394,14 +394,14 @@ if($("#OSdonutchart").length)
 
 //删除记录
 function recorddelete(e){
-	$('#deletewebsiteModel').modal('show');
-	$("#aiddelete").val($(e).attr('id'));
+	$('#deleterecordModel').modal('show');
+	$("#riddelete").val($(e).attr('id'));
 }
-$('#btn-deletewebsites').click(function() {
-	$.post("website!deleteByid.action", {
-		"id" : $("#aiddelete").val()
+$('#btn-deleterecord').click(function() {
+	$.post("userrecord!deleteByid.action", {
+		"rid" : $("#riddelete").val()
 	}, function(data) {
-		$('#deletewebsiteModel').modal('hide');
+		$('#deleterecordModel').modal('hide');
 		if(data.success == true){
 			$('#deleteuserSuccessModal').modal('show');
 		}else{
@@ -414,7 +414,7 @@ $('#btn-deletewebsites').click(function() {
 //跳转至鼠标移动路径图页面
 function showmousedraw(e){
 	//alert($(e).attr('id'));
-	window.location.href='draw.jsp';
+	window.location.href='MouseServlet?rid='+$(e).attr('id');
 }
 
 
@@ -429,22 +429,24 @@ $('#recorddatatable')
 					"bLengthChange": true, //是否启用设置每页显示记录数
 					"bFilter": false, //是否使用搜索
 					"bSort": false, //是否使用排序 
-					"sAjaxSource" : "website!getAllWebsites.action?rand="+Math.random(),
+					"sAjaxSource" : "userrecord!getAllRecords.action?rand="+Math.random(),
 					"aoColumns" : [ {
-						"mDataProp" : "id"
+						"mDataProp" : "rid"
 					}, {
-						"mDataProp" : "name"
+						"mDataProp" : "websitename"
 					}, {
-						"mDataProp" : "url"
+						"mDataProp" : "browsername"
 					}, {
-						"mDataProp" : "description"
+						"mDataProp" : "osname"
+					},{
+						"mDataProp" : "sessDate"
 					},{
 						"mDataProp" : null,
 		                "sClass": "center",
 		                "fnRender": function(obj) {
-		                    var aid= obj.aData["id"];
-		                    var sReturn = '<a class="btn btn-success useredit" href="#" onclick="showmousedraw(this)" id="'+aid+'"><i class="icon-zoom-in icon-white"></i>查看路径图</a>'+
-						'<a class="btn btn-danger userdelete" href="#" onclick="recorddelete(this)" id="'+aid+'"><i class="icon-trash icon-white"></i>删除记录</a>'; 
+		                    var rid= obj.aData["rid"];
+		                    var sReturn = '<a class="btn btn-success useredit" href="#" onclick="showmousedraw(this)" id="'+rid+'"><i class="icon-zoom-in icon-white"></i>查看路径图</a>'+
+						'<a class="btn btn-danger userdelete" href="#" onclick="recorddelete(this)" id="'+rid+'"><i class="icon-trash icon-white"></i>删除记录</a>'; 
 		                    return sReturn;
 		                }
 		               // "sDefaultContent": '<a href="" class="editor_edit">Edit</a> / <a href="" class="editor_remove">Delete</a>'

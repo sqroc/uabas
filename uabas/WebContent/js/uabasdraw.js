@@ -18,13 +18,20 @@
 		layoutType : "liquid"
 	};
 
-	var mouseData = window.smt2data;
+	var mouseData = window.recorddata;
 	var jsGraphics = window.jsGraphics;
 	var fn = window.uabasfunction;
 
 	// 获取鼠标坐标数据
-	var user;
-	var users = JSON.parse(unescape(mouseData.users));
+	var user = {
+		xcoords:[],
+		ycoords:[],
+		clicks:[],
+		timestamp:"",
+		wprev:0,
+		wprev:0
+	};
+	/*var users = JSON.parse(unescape(mouseData.users));
 	var numUsers = users.length;
 	if (numUsers > 1) {
 		for ( var i = 0; i < numUsers; ++i) {
@@ -35,8 +42,14 @@
 		}
 	} else {
 		user = users[0];
-	}
-
+	}*/
+	var numUsers = 1;
+	user.xcoords = mouseData.xcoords;
+	user.ycoords = mouseData.ycoords;
+	user.clicks = mouseData.clicks;
+	user.timestamp = mouseData.timestamp;
+	user.wprev = mouseData.wprev;
+	user.hprev = mouseData.hprev;
 	var xclean = [];
 	var yclean = [];
 

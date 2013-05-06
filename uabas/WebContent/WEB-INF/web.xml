@@ -43,4 +43,14 @@
     <servlet-name>exportexcel</servlet-name>
     <url-pattern>/exportexcel</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MouseServlet</display-name>
+    <servlet-name>MouseServlet</servlet-name>
+    <servlet-class>ua.servlet.MouseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MouseServlet</servlet-name>
+    <url-pattern>/MouseServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

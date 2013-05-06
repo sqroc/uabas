@@ -45,7 +45,7 @@ public class BrowsersManagerImpl implements BrowsersManager {
 	@Override
 	public Browsers loadByAid(int aid) {
 		// TODO Auto-generated method stub
-		return null;
+		return browsersDao.loadByAid(aid);
 	}
 
 	@Override
