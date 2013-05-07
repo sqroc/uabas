@@ -67,7 +67,7 @@ public class MouseServlet extends HttpServlet {
 		String timestamp = "\'cb9e0019ad\\n02:33 PM\'";
 		PrintWriter out = response.getWriter();
 		String url = cacheurlManager.loadByid(record.getImgId()).getUrl();
-		out.println(hs.getHTML(url, "UTF-8"));
+		out.println(hs.getHTML(url, "UTF-8").replaceAll("uabas", "uabasdrop"));
 		String dataopt = "<script type='text/javascript' src='js/uabasfunction.js'></script><script type='text/javascript'>var recorddata = {fps : 24, xcoords : "
 				+ xcoords
 				+ ",ycoords : "
@@ -84,7 +84,7 @@ public class MouseServlet extends HttpServlet {
 		out.print(dataopt);
 		String jsfile = "<script type='text/javascript' src='js/selector.js'></script><script type='text/javascript' src='js/wz_jsgraphics.js'></script><script type='text/javascript' src='js/json2.js'></script><script type='text/javascript' src='js/uabasdraw.js'></script>";
 		out.print(jsfile);
-		String option = "<script type='text/javascript'>draw.replay({entryPt : '#99FF66',exitPt : '#FF6666',regPt : '#FF00FF',regLn : '#00CCCC',click : '#FF0000',dDrop : '#AABBCC',varCir : '#FF9999',cenPt : '#DDDDDD',clust : '#0000FF',bgColor : '#000000',bgLayer : 1,realTime : 1,dirVect : 0,loadNextTrail : 0});</script>";
+		String option = "<script type='text/javascript'>draw.replay({entryPt : '#99FF66',exitPt : '#FF6666',regPt : '#FF00FF',regLn : '#00CCCC',click : '#FF0000',dDrop : '#AABBCC',varCir : '#FF9999',cenPt : '#555',clust : '#0000FF',bgColor : '#000000',bgLayer : 1,realTime : 1,dirVect : 0,loadNextTrail : 0});</script>";
 		out.print(option);
 	}
 

@@ -16,21 +16,7 @@
 				</ul>
 			</div>
 
-			<div class="row-fluid sortable">
-				
-				<div class="box">
-					<div class="box-header well">
-						<h2><i class="icon-list-alt"></i> 网站浏览量与访问量数据</h2>
-						<div class="box-icon">
-							<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
-							<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
-						</div>
-					</div>
-					<div class="box-content">
-						<div id="webvisits"  class="center" style="height:300px" ></div>
-						<p id="hoverdata">点击信息： <span id="clickdata"></span></p>
-					</div>
-				</div>
+			
 				
 				<!-- <div class="box">
 					<div class="box-header well">
@@ -116,7 +102,21 @@
 				</div>
 			</div>  
 		</div><!--/row-->
-		
+		<div class="row-fluid sortable">
+				
+				<div class="box">
+					<div class="box-header well">
+						<h2><i class="icon-list-alt"></i> 网站浏览量与访问量数据</h2>
+						<div class="box-icon">
+							<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+							<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+						</div>
+					</div>
+					<div class="box-content">
+						<div id="webvisits"  class="center" style="height:300px" ></div>
+						<p id="hoverdata">点击信息： <span id="clickdata"></span></p>
+					</div>
+				</div>
 					<!-- content ends -->
 			</div><!--/#content.span10-->
 				</div><!--/fluid-row-->

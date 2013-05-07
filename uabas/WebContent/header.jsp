@@ -76,7 +76,7 @@
 						<span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Profile</a></li>
+						<li><a href="user.jsp">用户管理</a></li>
 						<li class="divider"></li>
 						<li><a href="login.html">注销</a></li>
 					</ul>

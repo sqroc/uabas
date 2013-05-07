@@ -174,17 +174,18 @@
 			</div>
 			<div class="modal-body">
 				<strong>请将下列代码复制粘贴到所需统计的网站页面中</strong><br>
-				<textarea rows="10" style="width: 500px;"><script type="text/javascript" src="core/js/smt-aux.min.js"></script>  
-<script type="text/javascript" src="core/js/smt-record.min.js"></script>
+				<textarea rows="10" style="width: 500px;"><script type="text/javascript" src="js/uabasfunction.js"></script>   
+<script type="text/javascript" src="js/uabasrecord.js"></script>
 <script type="text/javascript">
-  try {
-    smt2.record({
-      recTime: 300,
-      disabled: Math.round(Math.random()),
-      warn: true, 
-      warnText: "We are going to record your mouse movements for a remote usability study."
-    });
-  } catch(err) {}
+try {
+uabas.record({
+    recTime: 1600,
+    disabled: Math.round(Math.random()),
+    id:1,
+    warn: true, 
+    warnText: "提示：您的鼠标行为将会被统计用作用户体验研究。"
+  });
+} catch(err) {}
   </script>
 				</textarea>
 			</div>

@@ -9,7 +9,7 @@
 		click : "#F00", // 鼠标点击颜色
 		dDrop : "#ABC", // 鼠标拖拉的颜色
 		varCir : "#F99", // 用户停止
-		cenPt : "#DDD", // 中心颜色
+		cenPt : "#555", // 中心颜色
 		clust : "#00F", // 集群颜色
 		bgColor : "#555", // 背景颜色
 		bgLayer : true, // 是否使用背景
