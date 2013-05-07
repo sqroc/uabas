@@ -53,4 +53,24 @@
     <servlet-name>MouseServlet</servlet-name>
     <url-pattern>/MouseServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>exportbrowser</display-name>
+    <servlet-name>exportbrowser</servlet-name>
+    <servlet-class>ua.export.exportbrowser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>exportbrowser</servlet-name>
+    <url-pattern>/exportbrowser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>exportos</display-name>
+    <servlet-name>exportos</servlet-name>
+    <servlet-class>ua.export.exportos</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>exportos</servlet-name>
+    <url-pattern>/exportos</url-pattern>
+  </servlet-mapping>
 </web-app>

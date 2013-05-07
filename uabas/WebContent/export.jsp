@@ -12,6 +12,7 @@
 					</li>
 				</ul>
 			</div>
-<a href="exportexcel">数据导出</a>
+<a href="exportbrowser">浏览器统计数据导出</a><br>
+<a href="exportos">操作系统统计数据导出</a>
 
 <jsp:include page="footer.jsp"></jsp:include>
