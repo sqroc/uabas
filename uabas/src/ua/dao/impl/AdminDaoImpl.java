@@ -47,18 +47,16 @@ public class AdminDaoImpl implements AdminDao {
 
 	}
 
+	/*
+	 * 检测用户名帐号和密码
+	 * @return 用户对象
+	 */
 	public Admin check(Admin admin) {
-
-		System.out.println("check" + admin.getName());
-
 		String queryString = "from Admin ad where ad.name='" + admin.getName()
 				+ "' and ad.password='" + admin.getPassword() + "'";
-
 		List<Admin> admins = hibernateTemplate.find(queryString);
-
 		if (admins != null && admins.size() > 0)
 			return admins.get(0);
-
 		else
 			return null;
 	}
