@@ -44,7 +44,7 @@ public class exportbrowser extends HttpServlet {
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * 生成Excel文件
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
@@ -52,7 +52,6 @@ public class exportbrowser extends HttpServlet {
 			response.setContentType("application/vnd.ms-excel"); // 改成输出excel文件
 			response.setHeader("Content-disposition",
 					"attachment; filename=browser.xls");
-
 			OutputStream os = response.getOutputStream();
 			// 打开文件
 			Workbook wb;
@@ -105,13 +104,9 @@ public class exportbrowser extends HttpServlet {
 			sheet.addCell(new Label(1, 4, sf+""));
 			sheet.addCell(new Label(1, 5, ch+""));
 			sheet.addCell(new Label(1, 6, other+""));
-
-		
-
 			// 写入数据并关闭文件
 			book.write();
 			book.close();
-
 		} catch (Exception e) {
 			System.out.println(e);
 		}

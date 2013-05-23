@@ -32,11 +32,15 @@ public class AdminDaoImpl implements AdminDao {
 		hibernateTemplate.save(admin);
 	}
 
+	/*
+	 * 调用hibernateTemplate的删除方法删除用户
+	 * 删除正确则返回1，错误则抛出异常
+	 */
 	public int deleletByid(int id) {
-
+        //生成一个临时对象用于删除
 		Admin Atemp = new Admin();
 		Atemp.setAid(id);
-
+		//调用hibernateTemplate
 		hibernateTemplate.delete(Atemp);
 		return 1;
 	}

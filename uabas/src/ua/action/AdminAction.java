@@ -58,9 +58,12 @@ public class AdminAction extends ActionSupport implements ModelDriven {
 		return SUCCESS;
 
 	}
-	
+	/*
+	 * 根据用户ID删除对应用户
+	 */
 	public String deleteByid() {
 		try {
+			//调用service中的AdminManager类的deleletByid方法
 			adminManager.deleletByid(admin.getAid());
 			this.success = true;
 		} catch (Exception e) {
