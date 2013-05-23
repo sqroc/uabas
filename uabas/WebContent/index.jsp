@@ -20,21 +20,21 @@
 				<a data-rel="tooltip"  class="well span3 top-block" href="user.jsp">
 					<span class="icon32 icon-red icon-user"></span>
 					<div>后台管理员</div>
-					<div>23</div>
+					<div id="adminnum">23</div>
 					
 				</a>
 
 				<a data-rel="tooltip"  class="well span3 top-block" href="website.jsp">
 					<span class="icon32 icon-color icon-star-on"></span>
 					<div>网站数量</div>
-					<div>2</div>
+					<div id="websitenum">2</div>
 					
 				</a>
 
 				<a data-rel="tooltip"  class="well span3 top-block" href="record.jsp">
 					<span class="icon32 icon-color icon-flag"></span>
 					<div>数据量</div>
-					<div>320</div>
+					<div id="recordnum">320</div>
 					
 				</a>
 				
@@ -73,4 +73,5 @@
 			
 		
 <jsp:include page="footer.jsp"></jsp:include>
+<script src="js/index.js"></script>
 	
