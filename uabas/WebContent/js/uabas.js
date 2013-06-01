@@ -114,7 +114,7 @@ $('#userdatatable')
 					"sPaginationType" : "bootstrap",
 					"oLanguage" : {
 						"sLengthMenu" : "每页显示 _MENU_ 条记录",
-						"sInfo": "当前显示 _START_ 到 _END_ 条，共 _TOTAL_ 条记录"
+						"sInfo" : "当前显示 _START_ 到 _END_ 条，共 _TOTAL_ 条记录"
 					}
 				});
 // 添加用户
@@ -262,7 +262,7 @@ $('#websitedatatable')
 					"sPaginationType" : "bootstrap",
 					"oLanguage" : {
 						"sLengthMenu" : "每页显示 _MENU_ 条记录",
-						"sInfo": "当前显示 _START_ 到 _END_ 条，共 _TOTAL_ 条记录"
+						"sInfo" : "当前显示 _START_ 到 _END_ 条，共 _TOTAL_ 条记录"
 					}
 				});
 
@@ -445,7 +445,7 @@ $.post("statistics!getos.action", {
 
 }, function(datars) {
 	if (datars.success == true) {
-		var data2 = [{
+		var data2 = [ {
 			label : "Windows",
 			data : datars.ostype.windows
 		}, {
@@ -506,13 +506,13 @@ $('#recorddatatable')
 				{
 					"bProcessing" : false,
 					"bServerSide" : true,
-					"bPaginate" : false, // 是否使用分页
+					"bPaginate" : true, // 是否使用分页
+					"sPaginationType": "full_numbers",
 					"iDisplayLength" : 10, // 默认每页显示的记录数
-					"bLengthChange" : true, // 是否启用设置每页显示记录数
+					"bLengthChange" : false, // 是否启用设置每页显示记录数
 					"bFilter" : false, // 是否使用搜索
 					"bSort" : false, // 是否使用排序
-					"sAjaxSource" : "userrecord!getAllRecords.action?rand="
-							+ Math.random(),
+					"sAjaxSource" : "userrecord!getAllRecords.action",
 					"aoColumns" : [
 							{
 								"mDataProp" : "rid"
@@ -549,7 +549,13 @@ $('#recorddatatable')
 					"sDom" : "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span12'i><'span12 center'p>>",
 					"sPaginationType" : "bootstrap",
 					"oLanguage" : {
-						"sLengthMenu" : "每页显示 _MENU_ 条记录",
-						"sInfo": "当前显示 _START_ 到 _END_ 条，共 _TOTAL_ 条记录"
+						"oPaginate" : {
+							"sFirst" : "第一页",
+							"sPrevious" : " 上一页 ",
+							"sNext" : " 下一页 ",
+							"sLast" : " 最后一页 "
+						},
+						"sLengthMenu" : "每页显示 10 条记录",
+						"sInfo" : "当前显示 _START_ 到 _END_ 条，共 _TOTAL_ 条记录"
 					}
 				});

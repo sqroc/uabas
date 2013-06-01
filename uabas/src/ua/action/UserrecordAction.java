@@ -39,12 +39,17 @@ public class UserrecordAction extends ActionSupport implements ModelDriven {
 	private List<RecordDisplay> aaData;
 	private String iTotalDisplayRecords;
 	private String iTotalRecords;
+	private int iDisplayStart;
+	private int iDisplayLength;
 	private int sEcho;
 
 	@JSON(serialize = false)
 	public String getAllRecords() throws Exception {
+		iDisplayStart =Integer.parseInt(org.apache.struts2.ServletActionContext.getRequest().getParameter("iDisplayStart"));
+		iDisplayLength =Integer.parseInt(org.apache.struts2.ServletActionContext.getRequest().getParameter("iDisplayLength"));
 		aaData = new ArrayList<RecordDisplay>();
-		List<Records> recordstemp = recordsManager.getAllRecords();
+		List<Records> recordstemp = new ArrayList<Records>();
+		recordstemp = recordsManager.getRecords(iDisplayStart, iDisplayLength);
 		for (int i = 0; i < recordstemp.size(); i++) {
 			RecordDisplay rd = new RecordDisplay();
 			rd.setRid(recordstemp.get(i).getRid());
@@ -64,7 +69,7 @@ public class UserrecordAction extends ActionSupport implements ModelDriven {
 			rd.setClicks(recordstemp.get(i).getClicks());
 			aaData.add(rd);
 		}
-		this.sEcho = 1;
+		this.sEcho = Integer.parseInt(org.apache.struts2.ServletActionContext.getRequest().getParameter("sEcho"));;
 		this.iTotalRecords = recordsManager.getTotalNum() + "";
 		this.iTotalDisplayRecords = recordsManager.getTotalNum() + "";
 
@@ -147,6 +152,24 @@ public class UserrecordAction extends ActionSupport implements ModelDriven {
 
 	public void setAaData(List<RecordDisplay> aaData) {
 		this.aaData = aaData;
+	}
+
+	@JSON(serialize = false)
+	public int getiDisplayStart() {
+		return iDisplayStart;
+	}
+
+	public void setiDisplayStart(int iDisplayStart) {
+		this.iDisplayStart = iDisplayStart;
+	}
+
+	@JSON(serialize = false)
+	public int getiDisplayLength() {
+		return iDisplayLength;
+	}
+
+	public void setiDisplayLength(int iDisplayLength) {
+		this.iDisplayLength = iDisplayLength;
 	}
 
 }
