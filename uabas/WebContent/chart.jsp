@@ -101,7 +101,7 @@
 					</div>
 				</div>
 			</div>  
-		</div><!--/row-->
+		</div><!--/row--><!--
 		<div class="row-fluid sortable">
 				
 				<div class="box">
@@ -118,8 +118,8 @@
 					</div>
 				</div>
 					<!-- content ends -->
-			</div><!--/#content.span10-->
-				</div><!--/fluid-row-->
+			<!--</div><!--/#content.span10-->
+			<!--	</div><!--/fluid-row-->
 				
 		<hr>
 

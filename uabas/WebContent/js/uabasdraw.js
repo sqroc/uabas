@@ -224,11 +224,11 @@
 			drawMouse.jgHelper
 					.setFont("sans-serif", fontSize + 'px', Font.BOLD);
 			// center the text in vertical
-			drawMouse.jgHelper.drawString("stopped...", x, y - fontSize / 2);
+			drawMouse.jgHelper.drawString("鼠标悬停点", x, y - fontSize / 2);
 			drawMouse.jgHelper.paint();
 		},
 
-		drawCentroid : function() {
+		drawCentroid : function() {/*
 			drawMouse.jg.setColor(drawOpt.cenPt);
 			var xsum = fn.array.sum(xclean) / xclean.length;
 			var ysum = fn.array.sum(yclean) / yclean.length;
@@ -248,7 +248,7 @@
 			drawMouse.jg.drawLine(u, v, u - l, v + l);
 			drawMouse.jg.drawLine(u, v, u + l, v + l);
 			drawMouse.jg.setStroke(0);
-			drawMouse.jg.paint();
+			drawMouse.jg.paint();*/
 		},
 
 		drawClusters : function(response) {
